@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 // @RestControllerAdvice is a specialized annotation for global exception handling in REST APIs.
 // It acts as a centralized interceptor, catching exceptions thrown by any controller and automatically 
 // serializing the error details directly into HTTP response bodies as JSON.
-@RestControllerAdvice
+@RestControllerAdvice(basePackages = "com.ecommerce.backend.controller")
 public class GlobalExceptionHandler {
 
     private static final Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
